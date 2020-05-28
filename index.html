@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movie App</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src='index.js'></script>
+        
+    </head>
+    <body>
+        <div data-role='page' id='home'>
+            <div data-role='header' data-theme='b'>
+                <h1>Movie Listtings</h1>
+            </div>
+            <div data-role='main'>
+                <form id='searchForm'>
+                    <div class='ui-field-contain'>
+                        <input type='text' name='searchText' id='searchText' placeholder="Enter your favorite movie.."/>
+                    </div>
+                    <a data-role="button" id='searchMovie'>Search</a>
+                </form>
+                <ul id="movies" data-role="listview"></ul>
+            </div>
+            <div data-role='footer' data-theme='b'>
+                <h1>IMDB@2020</h1>
+            </div> 
+        </div>
+    </body>
+</html>
