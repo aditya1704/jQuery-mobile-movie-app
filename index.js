@@ -20,7 +20,7 @@ function movieClicked(id){
 function getMovies(serachText){
     $.ajax({
         method:'GET',
-        url:'http://www.omdbapi.com/?apikey=6994e826&s='+serachText
+        url:'https://www.omdbapi.com/?apikey=6994e826&s='+serachText
     }).done(function(data){
         
         let movies= data.Search
@@ -44,7 +44,7 @@ function getMovie(movieid){
     console.log(movieid)
     $.ajax({
         method:'GET',
-        url:'http://www.omdbapi.com/?apikey=6994e826&i='+movieid
+        url:'https://www.omdbapi.com/?apikey=6994e826&i='+movieid
     }).done(function(data){
         console.log(data)
 
